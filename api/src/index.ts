@@ -1,9 +1,8 @@
 // Initialise everything here
 import { createServer } from "./app";
-import dotenv from "dotenv";
+import { initEnv } from "./config/env";
 
 // Init dotenv for environment variables
-dotenv.config();
-
+initEnv();
 // Start the server
 createServer();
